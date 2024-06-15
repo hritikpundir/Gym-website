@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRITIK Fitness Center</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url(https://t4.ftcdn.net/jpg/02/86/09/83/360_F_286098390_D2J4jLbOkCzikuSXxQBh26IxhR7t4i28.jpg);
+    background-size: 1406px;
+    font-family: 'Lemon', serif;
+
+.left{
+   display: inline-block;
+   position: absolute;
+   left: 34px;
+   top: 20px;
+   /* STARTING MAI SABKO BORDER DE DO */
+   /* border: 2px solid yellow; */
+}
+.left img{
+    display: block;
+    padding-left: 29px;
+    width: 70px;
+    border-radius: 12px;
+}
+.left div{
+    text-align: center;
+    
+}
+.mid{
+   display: block;
+   width: 44%;
+   margin: 40px auto ;
+   /* padding: -8px;
+   border: 2px solid yellow;
+   background-color: black; */
+  
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 24px 14px;
+
+}
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: gray;
+}
+.right{
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    /* border: 2px solid yellow */
+}
+.btn{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    margin: 0px 4px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    cursor:alias;
+    
+}
+.btn:hover{
+    background-color: rgb(37, 33, 33);
+}
+
+.container{
+    border: 2px solid white;
+    padding:40px 40px;
+    margin: 75px 25px;
+    width: 500px;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 334px;
+    border: 3px solid black;
+    padding: 4px;
+    margin: 7px auto;
+    font-size: 20px;
+
+}
+.form-group select{
+    text-align: center;
+    display: block;
+    width: 340px;
+    border: 3px solid black;
+    padding: 4px;
+    margin: 7px auto;
+    
+}
+.container h1{
+    text-align: center;
+    font-style: italic;
+}
+.container button{
+      display: block;
+      width:334px;
+      margin:10px auto ;
+
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+      <div class="left">
+       <img src="https://i.pinimg.com/originals/df/54/cf/df54cfa573995978b4915e8d6faea2c5.jpg" alt="">
+       <div><b>Hritik Fitness Club</b></div>
+      </div>
+      
+      <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" ">HOME</a></li>
+            <li><a href="#" class="active">ABOUT US</a></li>
+            <li><a href="#">FITNESS CALCULATOR</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+     
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Contact us</button>
+        <button class="btn">Email us</button>
+      </div>
+     
+      <div class="container">
+        <h1>JOIN FOR SHAPING YOUR MUSCLES !! </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+               
+               <select name=" gender" id="gender" >
+                
+                <option value="male">MALE</option>
+                <option value="female" selected>FEMALE</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <input type="name" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter your mobile no.">
+            </div>
+            <div class="form-group">
+                <input type="name" placeholder="Enter your email">
+            </div>
+            
+            <button class="btn">
+                SUBMIT
+            </button>
+            
+        </form>
+      </div>
+    </header>
+</body>
+</html>
